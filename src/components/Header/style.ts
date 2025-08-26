@@ -40,7 +40,7 @@ export const StyledHeader = styled.header`
     li a {
       text-decoration: none;
       color: #1a2b4c;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 16px;
       font-family: var(--font-primary);
       transition: all 0.2s ease;

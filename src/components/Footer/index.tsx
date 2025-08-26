@@ -16,7 +16,7 @@ export const Footer = () => {
         </div>
         <div className="contacts-card">
           <FaPhoneAlt className="contacts-icon" />
-          <p className="contacts-content">51993754890</p>
+          <p className="contacts-content">51 9956-7757</p>
         </div>
         <div className="contacts-card">
           <FaEnvelope className="contacts-icon" />

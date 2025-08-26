@@ -18,20 +18,15 @@ export const AboutSection = () => {
           <p className="description-text">
             Graduado em Ciências Jurídicas e Sociais pela Universidade Federal
             do Rio Grande do Sul, atuo com sólida experiência nas áreas de
-            Direito Cível, Direito Empresarial, Recuperação de Crédito,
-            Recuperação de Dívidas, entre outras áreas afins relacionadas ao
-            Direito Civil. Meu trabalho é pautado na excelência técnica, na
+            Direito Cível, Direito Empresarial, Recuperação de Crédito, entre outras áreas afins relacionadas ao Direito Civil. Meu trabalho é pautado na excelência técnica, na
             análise minuciosa de cada caso e na busca por soluções eficazes que
             garantam segurança jurídica e resultados concretos.
           </p>
         </div>
-        <div className="about-cta">
-          <p>Converse comigo e solucione o seu problema agora</p>
-          <div className="cta-button">
-            <img src={wpp} alt="WhatsApp" className="cta-icon" />
-            <p className="cta-text">Analisar meu caso</p>
-          </div>
-        </div>
+        <a href="https://wa.me/5199567757" className="about-cta">
+          <img src={wpp} alt="WhatsApp" className="cta-icon" />
+          <p className="cta-text">Analisar meu caso</p>
+        </a>
       </div>
     </StyledSection>
   );

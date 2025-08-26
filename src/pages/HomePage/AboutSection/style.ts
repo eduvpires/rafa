@@ -5,18 +5,17 @@ export const StyledSection = styled.section`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-height: 800px;
   gap: 2rem;
   padding: 2rem;
-  padding-top: 6rem;
+  padding-top: 5rem;
 
   .section-banner {
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 
+    width: 100%;
+    max-width: 720px;
     img {
       width: 100%;
       height: 100%;
@@ -25,10 +24,11 @@ export const StyledSection = styled.section`
   }
 
   .section-about {
-    flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: start;
     justify-content: center;
+    width: 100%;
     gap: 1.5rem;
 
     .about-header {
@@ -37,107 +37,105 @@ export const StyledSection = styled.section`
 
       h1 {
         font-size: 2rem;
-        font-weight: bold;
-        color: var(--color-blue-3);
-        margin-bottom: 0.3rem;
+        color: var(--color-blue-3); /* Azul sóbrio, ex: #2c3e50 */
+        font-weight: 700;
+        line-height: 1.4;
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
+        color: var(--color-gray-3); /* Cinza médio, ex: #5f6a7d */
         font-weight: 500;
-        color: var(--color-gray-3);
-        margin-bottom: 0.2rem;
+        line-height: 1.6;
       }
       span {
-        font-size: 0.9rem;
-        color: var(--color-gray-2);
+        font-size: 1rem;
+        color: var(--color-gray-2); /* Cinza médio, ex: #5f6a7d */
+        font-weight: 500;
+        line-height: 1.6;
       }
     }
 
     .about-description {
       .description-text {
-        font-size: 1rem;
+        font-size: 1.25rem;
+        color: var(--color-gray-3); /* Cinza médio, ex: #5f6a7d */
+        font-weight: 400;
         line-height: 1.6;
-        color: var(--color-gray-3);
         text-align: justify;
+      }
+    }
+  }
+
+  .about-cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    text-decoration: none;
+    background: var(--color-whatsapp-1);
+    border-radius: 2rem;
+
+    transition: background 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--color-whatsapp-2);
+    }
+
+    .cta-icon {
+      height: 1.5rem;
+      width: auto;
+    }
+
+    .cta-text {
+      font-size: 1.25rem;
+      color: var(--color-white-1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+
+    .section-banner {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+    }
+
+    .section-about {
+      align-items: center;
+
+      .about-header {
+        text-align: center;
+      }
+
+      .about-description {
+        .description-text {
+          text-align: center;
+        }
       }
     }
 
     .about-cta {
-      border-radius: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: start;
-      gap: 0.8rem;
+      padding: 1rem;
 
-      p {
-        font-weight: 500;
-        color: var(--color-blue-2);
+      .cta-icon {
+        height: 1.5rem;
+        width: auto;
       }
 
-      .cta-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        gap: 0.6rem;
-        padding: 0.8rem 1.2rem;
-
-        background: var(--color-whatsapp-2);
-        border-radius: 1rem;
-        font-weight: bold;
-
-        transition: background 0.3s ease;
-        cursor: pointer;
-
-        &:hover {
-          background: var(--color-whatsapp-1);
-        }
-
-        .cta-icon {
-          width: 2rem;
-          height: 2rem;
-        }
-
-        .cta-text {
-          font-size: 1rem;
-          color: var(--color-white-1);
-        }
-      }
-    }
-  }
-
-  @media (min-width: 1550px) {
-    max-height: 1100px;
-
-    .section-banner {
-      flex: 0.6;
-    }
-  }
-
-  @media (max-width: 900px) {
-    flex-direction: column;
-    gap: 1.5rem;
-    max-height: 1200px;
-
-    .section-banner {
-      flex: unset;
-      img {
-        max-height: 500px;
-      }
-    }
-
-    .section-about {
-      flex: unset;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      .about-header {
-        justify-content: center;
-        align-items: center;
-      }
-      .cta-button {
-        width: 100%;
+      .cta-text {
+        font-size: 1.25rem;
       }
     }
   }
