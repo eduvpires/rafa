@@ -4,7 +4,7 @@ export const articles = [
   {
     id: 1,
     image: article,
-    title: "O Que É um Processo de Execução?",
+    title: "O Que É um Processo de Execução?!",
     description:
       "Quando alguém tem um direito reconhecido — seja por contrato, cheque, sentença judicial ou outro título — e esse direito não é cumprido de forma voluntária, a via adequada para obrigar o devedor a cumprir sua obrigação é o processo de execução.",
     sections: [

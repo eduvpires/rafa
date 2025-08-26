@@ -10,7 +10,7 @@ export const AboutSection = () => {
       </figure>
       <div className="section-about">
         <div className="about-header">
-          <h1>Eduardo Pires</h1>
+          <h1>Eduarde Pires</h1>
           <p>Advogado Cível</p>
           <span>OAB/RS 139.034</span>
         </div>
